@@ -1,0 +1,14 @@
+{
+  "name": "@42-matcha/common",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist node_modules"
+  }
+}

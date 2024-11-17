@@ -1,0 +1,23 @@
+{
+  "name": "@42-matcha/server",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist node_modules",
+    "start": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "@42-matcha/common": "0.0.1",
+    "http-status-codes": "^2.3.0",
+    "mime-types": "^2.1.35"
+  },
+  "devDependencies": {
+    "@types/http-status-codes": "^1.2.0",
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^22.9.0",
+    "ts-json-schema-generator": "^2.3.0"
+  }
+}

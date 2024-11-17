@@ -1,0 +1,6 @@
+{
+  "extends": "@42-matcha/configs/tsconfig.base.json",
+  "compilerOptions": {
+    "resolveJsonModule": true
+  }
+}

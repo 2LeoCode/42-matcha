@@ -1,0 +1,36 @@
+{
+  "name": "42-matcha",
+  "version": "0.0.1",
+  "description": "Yet another dating website",
+  "repository": "https://github.com/2LeoCode/42-matcha",
+  "author": "2LeoCode <leo.13suardi@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "yarn@1.22.22",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "lint": "yarn lint:check",
+    "lint:check": "eslint **/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,json,html,css}",
+    "lint:fix": "eslint --fix **/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,json,html,css}",
+    "fmt": "yarn fmt:check",
+    "fmt:check": "prettier --check **/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,json,html,css}",
+    "fmt:fix": "prettier --write **/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,json,html,css}",
+    "build": "turbo build",
+    "clean": "turbo clean && rm -rf node_modules .turbo"
+  },
+  "devDependencies": {
+    "@42-matcha/configs": "0.0.1",
+    "@stylistic/eslint-plugin": "^2.10.1",
+    "@stylistic/eslint-plugin-js": "^2.10.1",
+    "@stylistic/eslint-plugin-jsx": "^2.10.1",
+    "@stylistic/eslint-plugin-ts": "^2.10.1",
+    "eslint": "^9.14.0",
+    "prettier": "^3.3.3",
+    "turbo": "^2.2.3",
+    "typescript": "^5.6.3"
+  }
+}

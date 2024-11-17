@@ -1,0 +1,3 @@
+{
+  "extends": "@42-matcha/configs/tsconfig.ui.json"
+}

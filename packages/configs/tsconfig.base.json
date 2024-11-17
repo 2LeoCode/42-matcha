@@ -1,0 +1,30 @@
+{
+  "include": [
+    "${configDir}/src"
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "lib": [
+      "ESNext"
+    ],
+    "rootDir": "${configDir}/src",
+    "outDir": "${configDir}/dist",
+    "strict": true,
+    "declaration": true,
+    "noEmitOnError": true,
+    "strictNullChecks": true,
+    "exactOptionalPropertyTypes": true,
+    "strictBindCallApply": true,
+    "disableSizeLimit": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolvePackageJsonImports": true
+  }
+}
