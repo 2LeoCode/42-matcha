@@ -1,0 +1,19 @@
+{
+  "name": "@42-matcha/importmap-manager",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist node_modules"
+  },
+  "dependencies": {
+    "cmd-ts": "^0.13.0",
+    "http-status-codes": "^2.3.0",
+    "@42-matcha/common": "0.0.1"
+  },
+  "devDependencies": {
+    "types-package-json": "^2.0.39"
+  }
+}

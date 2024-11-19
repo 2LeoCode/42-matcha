@@ -6,8 +6,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf dist node_modules"
+    "build": "tsc && yarn importmap:generate",
+    "clean": "rm -rf dist node_modules",
+    "importmap:generate": "node ../importmap-manager/dist/index.js generate"
   },
   "dependencies": {
     "@42-matcha/common": "0.0.1",
@@ -17,6 +18,7 @@
     "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
+    "@42-matcha/importmap-manager": "0.0.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "jspm": "^3.3.3"

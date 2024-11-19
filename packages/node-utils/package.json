@@ -1,16 +1,14 @@
 {
-  "name": "@42-matcha/common",
+  "name": "@42-matcha/node-utils",
   "version": "0.0.1",
+  "main": "dist/index.js",
   "license": "MIT",
   "private": true,
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    }
-  },
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist node_modules"
+  },
+  "dependencies": {
+    "http-status-codes": "^2.3.0"
   }
 }

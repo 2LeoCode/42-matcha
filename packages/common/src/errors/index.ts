@@ -1,6 +1,7 @@
 export * from "./unexpected";
 export * from "./codded";
 export * from "./env-value";
+export * from "./http-status";
 
 export function throwError<
   ErrConstructor extends new (...args: any[]) => Error,
